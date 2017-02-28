@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Burgering</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+  </head>
+  <body>
+    <div id="left-pannel">
+      <div id="burger-status">
+      </div>
+      <div class="ui icon input" id="patty-search-button">
+        <input placeholder="검색하기..." type="text">
+        <i class="search icon"></i>
+      </div>
+      <div id="patty-control-buttons">
+        <button class="ui small blue button">패티굽기</button>
+        <button class="ui small blue button">패티쇼핑</button>
+      </div>
+    </div>
+
+    <div id="center-pannel">
+      <div id="data-palete">
+        data-palete
+      </div>
+      <div id="interaction-palete">
+        interaction-palete
+      </div>
+    </div>
+
+    <div id="right-pannel">
+      <div class="ui raised card patty-explanation">
+        <div class="content">
+          <div class="header">Preprocessing</div>
+          <div class="meta">
+            <span class="category">Type: m</span>
+          </div>
+          <div class="description">
+            <p>그러니까 그런 패티 있잖아요 그런거</p>
+          </div>
+        </div>
+        <div class="extra content">
+          <div class="right floated author">
+            Jinger-Ale 제작
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
